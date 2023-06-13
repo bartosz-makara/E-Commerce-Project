@@ -11,7 +11,6 @@ function MyApp({
   pageProps: { ...pageProps },
 }: AppProps<{ session: Session }>) {
   return (
-    // Higher order component
     <SessionProvider session={pageProps.session}>
       <Provider store={store}>
         <Toaster />

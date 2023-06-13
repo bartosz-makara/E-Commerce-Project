@@ -24,9 +24,9 @@ const Home = ({ categories, products }: Props) => {
   };
 
   return (
-    <div className="">
+    <>
       <Head>
-        <title>my website</title>
+        <title>retuo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -67,7 +67,7 @@ const Home = ({ categories, products }: Props) => {
       </section>
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div className="elfsight-app-fd6bae44-8bdb-42b1-b9c2-3c4e6bbbe977"></div>
-    </div>
+    </>
   );
 };
 

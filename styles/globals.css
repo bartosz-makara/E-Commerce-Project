@@ -33,34 +33,4 @@
   .tabPanel {
     @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2;
   }
-
-  .home__scroll {
-    margin-left: 12.25rem;
-  }
-
-  .wheel {
-    animation: scroll 2s ease infinite;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateY(0);
-    }
-
-    30% {
-      transform: translateY(3.75rem);
-    }
-  }
-
-  .home__scroll-name {
-    color: white;
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-    margin-left: 2px;
-  }
-
-  .home__scroll-arrow {
-    font-size: 1.25rem;
-    color: white;
-  }
 }

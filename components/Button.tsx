@@ -1,5 +1,7 @@
 interface Props {
   title: string;
+  href?: string;
+  target?: string;
   onClick?: () => void;
   loading?: boolean;
   disabled?: boolean;
@@ -7,11 +9,21 @@ interface Props {
   padding?: string;
 }
 
-function Button({ title, onClick, loading, disabled, width, padding }: Props) {
+function Button({
+  title,
+  onClick,
+  loading,
+  disabled,
+  width,
+  padding,
+  href,
+  target,
+}: Props) {
   return (
     <a
-      href="#_"
-      className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-0.5 font-bold"
+      href={href}
+      target={target}
+      className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-0.5 font-bold cursor-pointer"
       onClick={onClick}
     >
       {!disabled ? (
